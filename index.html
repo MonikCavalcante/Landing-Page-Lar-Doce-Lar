@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar Doce Lar</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="src/logo1.png" alt="Ícone" class="icon">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+                
+                
+            </ul>
+
+            <button class="btn-default"> <!--botao geral -->
+                Peça aqui!
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>   <!--icone de menu -->
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item ">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui!
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor que faz você se sentir
+                    <span>em casa.</span> 
+                </h1>
+                    <p>Bem-vindo ao Lar Doce Lar, onde cada doce é feito com amor, dedicação e um toque especial de carinho. Nossa confeitaria foi criada para ser um verdadeiro refúgio para os amantes de sobremesas, oferecendo um ambiente acolhedor e uma experiência única que remete ao conforto e à felicidade do lar.</p>
+
+                     <div id="cta_buttons">
+                        <a href="#" class="btn-default">
+                            Ver Cardápio
+                        </a>
+                        <a href="tel: +5555555555" id="phone_button">
+                            <button class="btn-default">
+                                <i class="fa-solid fa-phone"></i>
+                                (55) 5555-5555
+                            </button>
+                            
+                        </a>
+                     </div>
+                     <div class="social-media-buttons">
+                        <a href="">
+                           <i class="fa-brands fa-whatsapp"></i> 
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i> 
+                         </a>
+                         <a href="">
+                            <i class="fa-brands fa-instagram"></i> 
+                         </a>
+                     </div>
+            </div>
+            <div id="banner">
+                <img src="src/images/banneroficial.png" alt="">
+
+            </div>
+        </section>
+    </main>
+
+
+    <section id="menu">
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Os mais pedidos</h3>
+
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato1.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Bolo Red Velvet 
+                </h3>
+
+                <span class="dish-description">
+                    Nosso mais delicisoso bolo red velvet com cobertura de morango e cheio de frutas vermelhas.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(132+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$129,90</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato2.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Donut's Recheados
+                </h3>
+
+                <span class="dish-description">
+                    Donut's recheados nos sabores de chocolate, morango, baunilha e doce de leite.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(267+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$19,90</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato3.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Brownie de Castanha
+                </h3>
+
+                <span class="dish-description">
+                    Delicioso e macio brownie de chocolate com castanhas-do-pará.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(98+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$15,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato4.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Brigadeiros Gourmet
+                </h3>
+
+                <span class="dish-description">
+                    Cento de brigadeiros gourmet de diversos sabores.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(277+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$70,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div id="dishes">
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato5.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Bolo de Chocolate Suflê
+                </h3>
+
+                <span class="dish-description">
+                   Bolo de chocolate com recheio de avelã e morango na textura suflê.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(121+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$110,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato9.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Cupcakes Gourmet Recheados
+                </h3>
+
+                <span class="dish-description">
+                    Cupcake's gourmet recheados nos sabores de chocolate, frutas vermelhas e maracujá.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(128+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$17,90</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato7 (2).png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Milkshake's 
+                </h3>
+
+                <span class="dish-description">
+                    Milkshake's batidos nos sabores de chocolate, morango, mate e baunilha.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(152+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$20,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <img src="src/images/prato8.png" class="dish-image" alt="">
+
+                <h3 class="dish-title">
+                    Café Latte Macchiato
+                </h3>
+
+                <span class="dish-description">
+                    Leite quente e suave com uma espuma densa completa com grãos puros.
+                </span>
+
+                <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(140+)</span>
+                </div>
+
+                <div class="dish-price">
+                    <h4>R$8,50</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <img src="src/images/confei.png" id="testimonial_chef" alt="">
+
+        <div id="testimonials_content">
+            <h2 class="section-title">
+                Depoimentos
+            </h2>
+            <h3 class="section-subtitle">
+                O que os clientes falam sobre nós
+            </h3>
+
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/images/ava1.png" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>
+                           <h1>Lucas Albani</h1>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Os doces que compro da Lar Doce Lar são os melhores que já experimentei, nunca vi nada igual, é simplesmente
+                            surreal! Eu amo!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="src/images/ava2.png" class="feedback-avatar" alt="">
+
+                    <div class="feedback-content">
+                        <p>
+                            <h1>Melina Sales</h1>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Fiz uma encomenda para a minha festa de 22 anos e chegaram todos perfeitos e intactos, sem falar do sabor...
+                            Simplesmente maravilhosos, pedirei mais vezes com certeza!!!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-default">
+                Ver mais avaliações
+            </button>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <img src="src/images/wave (3).svg" alt="">
+        <div id="footer_items">
+           <span id="copyright">
+            &copy 2024 Lar Doce Lar
+           </span> 
+           <div class="social-media-buttons">
+            <a href="">
+               <i class="fa-brands fa-whatsapp"></i> 
+            </a>
+            <a href="">
+                <i class="fa-brands fa-facebook"></i> 
+             </a>
+             <a href="">
+                <i class="fa-brands fa-instagram"></i> 
+             </a>
+         </div>
+        </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>

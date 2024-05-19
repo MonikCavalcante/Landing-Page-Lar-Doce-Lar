@@ -1,0 +1,99 @@
+#home{
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title{
+    font-size: 4rem;
+    color: rgb(126, 35, 35);
+}
+#cta .title span{
+
+    color: var(--cor-secundaria);
+}
+
+#cta .description{
+    font-size: 1.2rem;
+
+}
+
+#cta_buttons{
+    display: flex;
+    gap: 24px;
+
+}
+
+#cta_buttons a{
+   text-decoration: none;
+   color: #fff;
+
+}
+
+#btn-button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--cor--terceira);
+    padding: 8px;
+    font-weight: 500;
+    box-shadow:0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button{
+    margin-left: 20px;
+    display: flex;
+}
+.fa-phone{
+    margin-right: 10px;
+}
+
+#banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+   
+    width: 100%;
+    z-index: 2;
+}
+
+#banner img{
+    height: 100%;
+    width: fit-content;
+    
+}
+p{
+    text-align: justify;
+    color: var(--cor-quarta);
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width:1170px) {
+    #home{
+        min-height: 100%;
+        padding-top: 0px;
+
+
+    }
+    #banner,
+    #banner img{
+       display: none;
+    }
+    
+    #cta{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+}

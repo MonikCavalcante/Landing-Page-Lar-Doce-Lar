@@ -1,0 +1,85 @@
+.icon {
+    width: 100px; /* largura do ícone */
+    height: 100px; /* altura do ícone */
+}
+
+header{
+    width: 100%;
+    padding: 28px 8%; /*para ficar responsivo*/
+    position: sticky;
+    top: 0;
+    background-color:var(--cor-primaria);
+    z-index: 3;
+}
+:root {
+    --cor-primaria: #FFDADA; /* Definindo uma variável de cor primária */
+    --cor-secundaria: #FF5759; /*cor secundaria para letras e tituos */
+    --cor-terceira: #DF2F4F; /*para destaques*/
+    --cor-quarta: rgb(126, 35, 35); /*font chocolate */
+}
+
+#navbar{
+    width: 100%;
+    display: flex; /*ficar um ao lado do outro os elementos da nav*/
+    align-items: center;
+    justify-content: space-between; /* para ficar um no começo/meio/fim */
+}
+
+#nav_list{
+    display: flex;
+    list-style: none; /*retira as bolinhas da lista*/
+    gap: 48px; /* deixa um espaçamento entre os elementos da grid*/
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: var(--cor-terceira);
+    font-weight: 600;
+
+}
+
+.nav-item.active a {
+    color: var(--cor-terceira);
+    border-bottom: 3px solid var(--cor-secundaria);
+}
+
+#mobile_btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+@media screen and (max-width: 1170px) { /*responsividade de tamanho para mobile */
+    #nav_list,
+    #navbar .btn-default {
+        display: none;  /* vai sumir a navbar */
+    }
+
+    #mobile_btn{
+        display: block; /*vai aparecer o menu de mobile */
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+}
+
+#mobile_nav_list .nav-item{
+    list-style: none;
+    text-align: center;
+}
